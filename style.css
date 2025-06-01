@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
  
 body {
+    background-color:#1f2937; ;
     font-family: Roboto;
+    padding: 0
 }
 
-.flex-container {
-    background: rgb(2, 2, 37);
+.flex {
+    
+    padding: 10px 20%;
+}
+
+.flex.navbar {
+    
+    background: #1f2937;
     display: flex;
     width: auto;
     height: auto;
-    padding: 1em 15%;
+    margin-bottom: 3em;
     justify-content: space-between;
 }
 
 nav {
-    border: 2px solid red;
+    
     width: auto;
     flex: 1 1 0;
 }
@@ -22,7 +30,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #fff;
-    
+    margin: auto 20px;
     padding: 10px;
     display: block;
     width: auto;
@@ -35,9 +43,66 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul .logo {
     flex-grow: 2;
 
+}
+
+
+.header {
+    
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.header img {
+    
+    max-width: 100%;
+    flex: 1;
+    align-items: center
+    
+}
+.content {
+    padding-right: 30px;
+    flex: 1 1 1;
+    justify-content: center;
+}
+
+.hero {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+.desc {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 50px;
+}
+
+
+.btn-fill {
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.flex-section {
+    padding: 0;
+    background: #fff;
+    display: flex;
+    width: auto;
+    height: 5em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    justify-content: space-between;
 }
